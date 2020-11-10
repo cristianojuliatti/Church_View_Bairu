@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bairu</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-entrada-1">
+        <li class="text">Entrada (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-entrada-2">
+        <li class="text">Entrada (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-entrada-3">
+        <li class="text">Entrada (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-foyer">
+        <li class="text">Foyer</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-jardim-frente-1">
+        <li class="text">Jardim Frente (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-jardim-frente-2">
+        <li class="text">Jardim Frente (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-jardim-frente-3">
+        <li class="text">Jardim Frente (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-estacionamento-1">
+        <li class="text">Estacionamento (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-estacionamento-2">
+        <li class="text">Estacionamento (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-estacionamento-3">
+        <li class="text">Estacionamento (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-jardim-fundos-1">
+        <li class="text">Jardim Fundos (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-jardim-fundos-2">
+        <li class="text">Jardim Fundos (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-jardim-fundos-3">
+        <li class="text">Jardim Fundos (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-jardim-lateral">
+        <li class="text">Jardim Lateral</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-depsito-fm">
+        <li class="text">Depósito FM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-fraldrio">
+        <li class="text">Fraldário</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-pia-batismal-1">
+        <li class="text">Pia Batismal (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-pia-batismal-2">
+        <li class="text">Pia Batismal (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-pia-batismal-3">
+        <li class="text">Pia Batismal (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-pne-1">
+        <li class="text">PNE (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-pne-2">
+        <li class="text">PNE (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-sacramental-1">
+        <li class="text">Sacramental (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-sacramental-2">
+        <li class="text">Sacramental (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-sacramental-3">
+        <li class="text">Sacramental (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-sacramental-4">
+        <li class="text">Sacramental (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-sacramental-5">
+        <li class="text">Sacramental (5)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-sacramental-6">
+        <li class="text">Sacramental (6)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-sacramental-7">
+        <li class="text">Sacramental (7)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-sala-de-som">
+        <li class="text">Sala de Som</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-cultural-1">
+        <li class="text">Cultural (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-cultural-2">
+        <li class="text">Cultural (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-sala-01">
+        <li class="text">Sala 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-sala-03">
+        <li class="text">Sala 03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-sala-04">
+        <li class="text">Sala 04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-sala-05-1">
+        <li class="text">Sala 05 (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-sala-05-2">
+        <li class="text">Sala 05 (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-sala-06">
+        <li class="text">Sala 06</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-sala-07">
+        <li class="text">Sala 07</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-sala-10">
+        <li class="text">Sala 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-secretaria-1">
+        <li class="text">Secretaria 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-secretaria-2">
+        <li class="text">Secretaria 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-terreno-excedente">
+        <li class="text">Terreno Excedente</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-zeladoria">
+        <li class="text">Zeladoria</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-banheiro-feminino-1">
+        <li class="text">Banheiro Feminino (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-banheiro-feminino-2">
+        <li class="text">Banheiro Feminino (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-banheiro-feminino-3">
+        <li class="text">Banheiro Feminino (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-banheiro-feminino-4">
+        <li class="text">Banheiro Feminino (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-banheiro-masculino-1">
+        <li class="text">Banheiro Masculino (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-banheiro-masculino-2">
+        <li class="text">Banheiro Masculino (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-banheiro-masculino-3">
+        <li class="text">Banheiro Masculino (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-biblioteca">
+        <li class="text">Biblioteca</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-bispado-1">
+        <li class="text">Bispado 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-bispado-2">
+        <li class="text">Bispado 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-corredor-1">
+        <li class="text">Corredor (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-corredor-2">
+        <li class="text">Corredor (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-corredor-3">
+        <li class="text">Corredor (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-corredor-4">
+        <li class="text">Corredor (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-corredor-5">
+        <li class="text">Corredor (5)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-corredor-6">
+        <li class="text">Corredor (6)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-corredor-7">
+        <li class="text">Corredor (7)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-corredor-8">
+        <li class="text">Corredor (8)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-cozinha">
+        <li class="text">Cozinha</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
